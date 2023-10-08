@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=".\Assets\PeerTutorHub1.png">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #07010D;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup-container {
+            background-color: #07010D;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .signup-container h2 {
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #007bff;
+            border-radius: 3px;
+            background-color: #ffffff;
+            color: #07010D;
+        }
+        .form-group button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .center-button {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/67334017/263496063-52a6b6d2-5eee-493c-b6d7-acbdc0d6d664.png" alt="Logo" width="150" height="90">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="institution" name="institution" placeholder="Enter your institution/organization">
+            </div>
+            <div class="form-group center-button">
+                <button href="dashboard.html" type="submit" >Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
