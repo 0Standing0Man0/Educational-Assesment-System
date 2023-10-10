@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assessment System</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0 0 5px 5px;
+        }
+
+        /* Graph Styles */
+        #performance-graph {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Assessment System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Assessments</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>Welcome to the Student Assessment System</h2>
+            <p>This system allows you to manage your evaluations, project submissions, grades, and account details.</p>
+
+            <!-- Graph to display previous year's performance -->
+            <h3>Previous Year's Performance</h3>
+            <div id="performance-graph"></div>
+
+            <!-- Curriculum List -->
+            <h3>Curriculum List</h3>
+            <ul>
+                <li>Mathematics</li>
+                <li>Science</li>
+                <li>History</li>
+                <!-- Add more curriculum items here -->
+            </ul>
+
+            <!-- Subjects List -->
+            <h3>Subjects List</h3>
+            <ul>
+                <li>Math 101</li>
+                <li>Physics 101</li>
+                <li>English 101</li>
+                <!-- Add more subject items here -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Student Assessment System
+    </footer>
+
+    <!-- JavaScript for the graph (Example using Chart.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Sample data for the performance graph
+        var ctx = document.getElementById('performance-graph').getContext('2d');
+        var performanceChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Subject 1', 'Subject 2', 'Subject 3', 'Subject 4'],
+                datasets: [{
+                    label: 'Performance',
+                    data: [85, 78, 92, 88],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 99, 132, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

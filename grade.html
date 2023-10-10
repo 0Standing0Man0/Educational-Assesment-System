@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page Styles */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Print Styles */
+        @media print {
+            /* Hide non-essential elements when printing */
+            body * {
+                display: none;
+            }
+
+            /* Show only the content inside the .print-section */
+            .print-section * {
+                display: block !important;
+            }
+
+            /* Style the printed page */
+            .print-section {
+                padding: 20px;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Grades</h1>
+        <p>This page displays the grades of the student.</p>
+
+        <!-- Student Grades -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Math</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>History</td>
+                    <td>A-</td>
+                </tr>
+                <!-- Add more rows for other subjects -->
+            </tbody>
+        </table>
+
+        <!-- Print Section -->
+        <div class="print-section">
+            <h2>Printable Version of Grades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Math</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>History</td>
+                        <td>A-</td>
+                    </tr>
+                    <!-- Add more rows for other subjects -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Print Button -->
+        <button onclick="window.print()">Print</button>
+    </div>
+</body>
+</html>
