@@ -54,6 +54,7 @@ body {
     color: white;
 }
 .signup-container .radio input{
+    transform: scale(1.5);
     cursor: pointer;
     background-color: rgb(112, 179, 220);
 }
