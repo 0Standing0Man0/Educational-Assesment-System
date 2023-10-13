@@ -26,6 +26,9 @@ body {
 .slide3 { background-color: #5a13bd; color: #fff; transform: translateX(200%); }
 
 .slide-content {
+    width: 100%;
+}
+.text-class{
     text-align: center;
 }
 
@@ -42,32 +45,15 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-/* Login and Signup Form Styles */
-.form-container {
-    display: none;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.form-container.active {
-    display: block;
-}
-
-.form-input {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-button {
-    background-color: #007bff;
+.buttondown {
+    background-color: inherit;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    transform: translateX(0);
+    width: 100%;
+    border-color:transparent;
+    position: absolute;
+    bottom: 0;
+}
+.buttondown:hover{
+    opacity: 0.3;
 }
