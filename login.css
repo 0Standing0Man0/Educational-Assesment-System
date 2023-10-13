@@ -22,6 +22,36 @@ body {
   color: #fff; /* Change text color to contrast with dark background */
 }
 
+.divider {
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 300%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider:before {
+  right: 100%;
+  margin-right: 10px;
+}
+
+.divider:after {
+  left: 100%;
+  margin-left: 10px;
+}
+
+.btn-block {
+  margin-top: 50px; /* Add margin to the top */
+}
+
 .form-signin {
   width: 100%;
   max-width: 330px;
