@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Documents - Student Assessment System</title>
+    <link rel="stylesheet" type="text/css" href="document.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Documents</h1>
+        <h2>Upload and Manage Documents</h2>
+        
+        <form id="documentForm" enctype="multipart/form-data">
+            <label for="documentType">Document Type:</label>
+            <select id="documentType" name="documentType">
+                <option value="notes">Notes</option>
+                <option value="answers">Answers</option>
+            </select>
+
+            <label for="documentFile">Upload Document:</label>
+            <input type="file" id="documentFile" name="documentFile" accept=".pdf, .docx, .txt" required>
+
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+    <script src="document.js"></script>
+</body>
+</html>
