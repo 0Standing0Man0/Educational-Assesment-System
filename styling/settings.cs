@@ -1,26 +1,26 @@
 .container {
-    width: 400px;
+    width: 400;
     margin: 0 auto;
     text-align: center;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 24;
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 10;
 }
 
 input, select {
-    padding: 5px;
-    margin-top: 5px;
+    padding: 5;
+    margin-top: 5;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 20;
+    padding: 10;
     background-color: #0074e4;
     color: white;
     border: none;
@@ -33,7 +33,7 @@ button {
 }
 
 .settings-menu li {
-    margin: 10px 0;
+    margin: 10;
 }
 
 a {
