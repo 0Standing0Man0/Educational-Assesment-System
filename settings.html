@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings - Student Assessment System</title>
+    <link rel="stylesheet" type="text/css" href="styling\settings.cs">
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        
+        <h2>Background Settings</h2>
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor" name="bgColor">
+        
+        <h2>Theme Settings</h2>
+        <label for="theme">Select Theme:</label>
+        <select id="theme" name="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+
+        <h2>Contact Information</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <button id="saveSettings">Save Settings</button>
+    </div>
+
+    <script src="js\settings.js"></script>
+</body>
+</html>
