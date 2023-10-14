@@ -1,29 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const bgColorInput = document.getElementById('bgColor');
-    const themeSelect = document.getElementById('theme');
-    const emailInput = document.getElementById('email');
-    const phoneInput = document.getElementById('phone');
-    const saveSettingsButton = document.getElementById('saveSettings');
+    // Common script code here
+    
+    // Example for saving settings
+    document.getElementById('saveBackground').addEventListener('click', function() {
+        const bgColor = document.getElementById('bgColor').value;
+        // Save and apply background color
+    });
 
-    // Load user's current settings and apply them to the form
+    document.getElementById('saveTheme').addEventListener('click', function() {
+        const selectedTheme = document.getElementById('theme').value;
+        // Save and apply the selected theme
+    });
 
-    saveSettingsButton.addEventListener('click', function() {
-        const bgColor = bgColorInput.value;
-        const selectedTheme = themeSelect.value;
-        const email = emailInput.value;
-        const phone = phoneInput.value;
+    document.getElementById('saveFontSize').addEventListener('click', function() {
+        const fontSize = document.getElementById('fontSize').value;
+        // Save and apply the font size
+    });
 
-        // Save the user's settings to the server
-        // You would typically use AJAX or fetch for this
-
-        // Handle the response from the server
-
-        // Apply background color and theme changes to the page
-        document.body.style.backgroundColor = bgColor;
-        // Apply theme-specific styling if needed
-
-        // Display a success message or handle errors
-
-        console.log('Settings saved successfully!');
+    document.getElementById('saveLanguage').addEventListener('click', function() {
+        const selectedLanguage = document.getElementById('language').value;
+        // Save and apply the selected language
     });
 });

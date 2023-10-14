@@ -8,11 +8,6 @@ h1 {
     font-size: 24px;
 }
 
-h2 {
-    font-size: 18px;
-    margin-top: 20px;
-}
-
 label {
     display: block;
     margin-top: 10px;
@@ -30,4 +25,18 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.settings-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.settings-menu li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0074e4;
 }
