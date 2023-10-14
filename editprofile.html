@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <h1>Edit Student Profile</h1>
-        <form id="profileForm">
+        <form id="profileForm" enctype="multipart/form-data">
             <label for="studentName">Name:</label>
             <input type="text" id="studentName" name="studentName" required>
 
@@ -16,6 +16,9 @@
 
             <label for="studentGrade">Grade:</label>
             <input type="text" id="studentGrade" name="studentGrade" required>
+
+            <label for="studentPicture">Profile Picture:</label>
+            <input type="file" id="studentPicture" name="studentPicture" accept="image/*">
 
             <button type="submit">Save</button>
         </form>
