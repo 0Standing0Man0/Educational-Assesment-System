@@ -1,0 +1,46 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0074e4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#notificationList {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#notificationList li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
