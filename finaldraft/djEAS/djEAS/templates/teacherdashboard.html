@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            padding: 10px;
+            position: fixed;
+            height: 100%;
+        }
+
+        #content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        #content h2 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="{% url 'logout' %}">Log out</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h2>Welcome to your Dashboard</h2>
+        <p>This is a simple HTML dashboard page. You can add more content, charts, and functionality to make it a complete dashboard for your needs.</p>
+    </div>
+</body>
+</html>

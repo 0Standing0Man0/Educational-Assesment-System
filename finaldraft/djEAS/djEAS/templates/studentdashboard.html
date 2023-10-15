@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Assessment System</title>
+    <link href="{% static 'studentdashboard.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Educational Assessment System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'test' %}">Assessments</a></li>
+            <li><a href="grade.html">Results</a></li>
+            <li><a href="userpage.html">Account</a></li>
+            <li><a href="{% url 'logout' %}">Log out</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>Welcome to the Educational Assessment System</h2>
+            <p>This system allows you to manage your evaluations, project submissions, grades, and account details.</p>
+
+            <!-- Graph to display previous year's performance -->
+            <h3>Previous Year's Performance</h3>
+            <div id="performance-graph"></div>
+
+            <!-- Curriculum List -->
+            <h3>Curriculum List</h3>
+            <ul>
+                <li>Mathematics</li>
+                <li>Science</li>
+                <li>History</li>
+                <!-- Add more curriculum items here -->
+            </ul>
+
+            <!-- Subjects List -->
+            <h3>Subjects List</h3>
+            <ul>
+                <li>Math 101</li>
+                <li>Physics 101</li>
+                <li>English 101</li>
+                <!-- Add more subject items here -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        Educational Assessment System
+    </footer>
+
+    <!-- JavaScript for the graph (Example using Chart.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Sample data for the performance graph
+        var ctx = document.getElementById('performance-graph').getContext('2d');
+        var performanceChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Subject 1', 'Subject 2', 'Subject 3', 'Subject 4'],
+                datasets: [{
+                    label: 'Performance',
+                    data: [85, 78, 92, 88],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 99, 132, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

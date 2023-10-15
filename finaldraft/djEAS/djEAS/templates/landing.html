@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Landing Page with Login and Signup</title>
+    <link rel="stylesheet" href="{% static 'landing.css' %}">
+</head>
+<body>
+    <div class="landing-container">
+        <div class="slide slide1">
+            <div class="slide-content"><div class="text-class">
+                <h1>Welcome to our Sliding Landing Page</h1>
+                <p>Slide through the content to explore more.</p></div>
+                <!-- <button class="button" onclick="nextSlide()">Next</button> -->
+                <button class="buttondown" onclick="nextSlide()">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="slide slide2"> <!-- go to feedback form -->
+            <div class="slide-content text-class">
+                <h1>Engage with Interactive Content</h1>
+                <p>Our sliding landing page offers an engaging user experience.</p>
+                <a href="{% url 'feedback' %}" button class="button" onclick="nextSlide()">Next</a>
+            </div>
+        </div>
+        <div class="slide slide3">
+            <div class="slide-content text-class">
+                <h1>Get Started Now</h1>
+                <p>Explore our website and discover what we have to offer.</p>
+                <a href="{% url 'login' %}" button class="button" onclick="showLoginForm()">Log In</a>
+                <a href="{% url 'signup' %}" button class="button" onclick="showSignupForm()">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/landing.js' %}"></script>
+</body>
+</html>
