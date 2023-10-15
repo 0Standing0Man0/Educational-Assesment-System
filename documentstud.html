@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <h1>Student Documents</h1>
-        <h2>Fetch Notes and Assignments</h2>
+        <h2>Fetch and Preview Notes and Assignments</h2>
 
         <div class="controls">
             <label for="filterType">Filter by Document Type:</label>
@@ -26,10 +26,22 @@
         <div class="document-list">
             <h3>Available Documents</h3>
             <ul>
-                <li data-type="notes"><a href="notes/math.pdf" target="_blank">Math Notes</a></li>
-                <li data-type="notes"><a href="notes/science.pdf" target="_blank">Science Notes</a></li>
-                <li data-type="assignments"><a href="assignments/assignment1.pdf" target="_blank">Assignment 1</a></li>
-                <li data-type="assignments"><a href="assignments/assignment2.pdf" target="_blank">Assignment 2</a></li>
+                <li data-type="notes" data-link="notes/math.pdf">Math Notes
+                    <a href="notes/math.pdf" class="download-link" target="_blank" download>Download</a>
+                    <a href="notes/math.pdf" class="preview-link" target="_blank">Preview</a>
+                </li>
+                <li data-type="notes" data-link="notes/science.pdf">Science Notes
+                    <a href="notes/science.pdf" class="download-link" target="_blank" download>Download</a>
+                    <a href="notes/science.pdf" class="preview-link" target="_blank">Preview</a>
+                </li>
+                <li data-type="assignments" data-link="assignments/assignment1.pdf">Assignment 1
+                    <a href="assignments/assignment1.pdf" class="download-link" target="_blank" download>Download</a>
+                    <a href="assignments/assignment1.pdf" class="preview-link" target="_blank">Preview</a>
+                </li>
+                <li data-type="assignments" data-link="assignments/assignment2.pdf">Assignment 2
+                    <a href="assignments/assignment2.pdf" class="download-link" target="_blank" download>Download</a>
+                    <a href="assignments/assignment2.pdf" class "preview-link" target="_blank">Preview</a>
+                </li>
             </ul>
         </div>
     </div>
