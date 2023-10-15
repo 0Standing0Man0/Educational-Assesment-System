@@ -3,54 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational Assessment System</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-        
-        h1 {
-            text-align: center;
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-        }
-
-        /* Button Styles */
-        .promote-button {
-            background-color: #4CAF50; /* Green background color */
-            color: #fff; /* White text color */
-            padding: 10px 20px; /* Padding around the text */
-            border: none; /* No border */
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Cursor on hover */
-            font-size: 16px; /* Font size */
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px 0;
-            transition: background-color 0.3s; /* Smooth color transition on hover */
-        }
-
-        .promote-button:hover {
-            background-color: #45a049; /* Darker green color on hover */
-        }
-
-        /* Center the button on the page */
-        .button-container {
-            text-align: center;
-        }
-    </style>
+    <title>Student Promotion System - Admin</title>
+    <link rel="stylesheet" type="text/css" href="styling\promote.css">
 </head>
 <body>
-    <h1>Educational Assessment System</h1>
+    <h1>Student Promotion System - Admin</h1>
     
     <div class="button-container">
-        <button class="promote-button">Promote Candidates</button>
+        <button class="promote-button" id="promoteButton">Promote Selected</button>
+        <button class="demote-button" id="demoteButton">Demote Selected</button>
     </div>
+    
+    <div class="student-list">
+        <h2>Student List</h2>
+        <ul id="studentList">
+            <!-- Student list items with checkboxes -->
+        </ul>
+    </div>
+    
+    <script src="js\promote.js"></script>
 </body>
 </html>
