@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Assessment - Student Assessment System</title>
+    <link rel="stylesheet" type="text/css" href="styling/admin_test.css">
+</head>
+<body>
+    <div class="admin-assessment">
+        <h1>Admin Assessment</h1>
+        
+        <form id="assessmentForm">
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" required></textarea>
+            
+            <label for="questionType">Question Type:</label>
+            <select id="questionType" name="questionType">
+                <option value="multiple-choice">Multiple Choice</option>
+                <option value="written-answer">Written Answer</option>
+            </select>
+
+            <label for="answer">Correct Answer:</label>
+            <input type="text" id="answer" name="answer" required>
+            
+            <button type="submit">Upload Question</button>
+        </form>
+    </div>
+    
+    <script src="js/admin_test.js"></script>
+</body>
+</html>
