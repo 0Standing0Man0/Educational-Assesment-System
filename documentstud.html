@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Documents - Student Assessment System</title>
+    <link rel="stylesheet" type="text/css" href="styling\documentstud.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Documents</h1>
+        <h2>Fetch Notes and Assignments</h2>
+
+        <div class="controls">
+            <label for="filterType">Filter by Document Type:</label>
+            <select id="filterType">
+                <option value="all">All</option>
+                <option value="notes">Notes</option>
+                <option value="assignments">Assignments</option>
+            </select>
+
+            <label for="searchBox">Search:</label>
+            <input type="text" id="searchBox" placeholder="Search documents">
+
+            <button id="filterButton">Apply Filter</button>
+        </div>
+
+        <div class="document-list">
+            <h3>Available Documents</h3>
+            <ul>
+                <li data-type="notes"><a href="notes/math.pdf" target="_blank">Math Notes</a></li>
+                <li data-type="notes"><a href="notes/science.pdf" target="_blank">Science Notes</a></li>
+                <li data-type="assignments"><a href="assignments/assignment1.pdf" target="_blank">Assignment 1</a></li>
+                <li data-type="assignments"><a href="assignments/assignment2.pdf" target="_blank">Assignment 2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js\documentstud.js"></script>
+</body>
+</html>
